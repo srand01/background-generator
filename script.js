@@ -16,8 +16,12 @@ function setGradient() {
 
 //setRandom colors for gradient 1 and 2
 function setRandomColors() {
-  color1.value = "#" + ((Math.random() * 0xffffff) << 0).toString(16);
-  color2.value = "#" + ((Math.random() * 0xffffff) << 0).toString(16);
+  color1.value = "#000000".replace(/0/g, function() {
+    return (~~(Math.random() * 16)).toString(16);
+  });
+  color2.value = "#000000".replace(/0/g, function() {
+    return (~~(Math.random() * 16)).toString(16);
+  });
   body.style.background =
     "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
   css.textContent = body.style.background + ";";
