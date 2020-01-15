@@ -47,6 +47,7 @@ a[class*="btn"] {
   text-align: center;
   transition: top 0.01s linear;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  letter-spacing: initial;
 }
 
 .btn-3d.green:hover {
@@ -66,4 +67,12 @@ a[class*="btn"] {
 .btn-3d.green:active {
   box-shadow: 0 0 0 1px #82c8a0 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
     0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font: 600 1.5em "Raleway", sans-serif;
+  }
 }
